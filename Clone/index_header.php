@@ -18,6 +18,7 @@
     <link href="./dist/css/sb-admin-2.css" rel="stylesheet">
     <link href="./vendor/morrisjs/morris.css" rel="stylesheet">
     <link href="./vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="./vendor/open-layer/ol.css" rel="stylesheet">
 
     <!-- JS -->
     <script src="./vendor/jquery/jquery.min.js"></script>
@@ -28,6 +29,9 @@
     <script src="./vendor/raphael/raphael.min.js"></script>
     <script src="./vendor/morrisjs/morris.min.js"></script>
     <script src="./data/morris-data.js"></script>
+
+    <script src="./vendor/open-layer/ol.js"></script>
+
 
     <script src="./dist/js/sb-admin-2.js"></script>
 
