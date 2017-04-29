@@ -9,7 +9,7 @@ CREATE TABLE `accounts` (
    `password` varchar(255) not null,
    PRIMARY KEY (`id`),
    UNIQUE KEY (`username`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=2;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 INSERT INTO `accounts` (`id`, `username`, `password`) VALUES 
 ('1', 'max98', '867a79be28576005bc18883f5f38c8ef');
@@ -19,7 +19,7 @@ CREATE TABLE `chart_info` (
    `x` int(11) not null,
    `y` float not null,
    PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=3;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 -- [Table `chart_info` is empty]
 
@@ -29,7 +29,7 @@ CREATE TABLE `circuit` (
    `y` varchar(255),
    `z` varchar(255),
    PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=7;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 -- [Table `circuit` is empty]
 
@@ -49,7 +49,7 @@ CREATE TABLE `data_logs` (
    `i` varchar(255),
    `date_time` datetime,
    PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=70;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 -- [Table `data_logs` is empty]
 
@@ -60,7 +60,7 @@ CREATE TABLE `notifications` (
    `date_time` datetime not null,
    `type` int(11) not null default '0',
    PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=5;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=0;
 
 INSERT INTO `notifications` (`id`, `title`, `desc`, `date_time`, `type`) VALUES 
 ('1', 'Update recieved', '', '2017-04-29 04:05:14', '0'),
