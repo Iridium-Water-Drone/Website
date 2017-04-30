@@ -11,7 +11,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">Iridium Control Panel</a>
+                <a class="navbar-brand" href="index.php"><b>Iridium Control Panel</b></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -43,7 +43,7 @@
                             <a href="index.php"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Map</a>
+                            <a href="?p=map"><i class="fa fa-sitemap fa-fw"></i> Map</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Control Orders<span class="fa arrow"></span></a>

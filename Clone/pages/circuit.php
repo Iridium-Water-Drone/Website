@@ -14,19 +14,45 @@ include("navbar.php");
                     <div class="panel panel-default">
                         <div class="panel-heading">Map</div>
                         <div class="panel-body">
-                            <div id="map" class="map" style="height: 100%;"></div>
 
-                            <form class="form-inline">
+                            <div id="map" class="map" style="height: 100%;"></div>
+                  
+                            <form class="form-inline" style="visibility: hidden; height: 0px;">
                                 <label>Geometry type &nbsp;</label>
                                 <select id="type">
                                     <option value="LineString">LineString</option>
                                 </select>
                             </form>
-                            <div id="myposition"></div>
+                         
+                            <p><div name="mouseXY"></div></p>
+
+                            <div class="col-lg-2">
+                              <label style="margin-top: 10px;">Select circuit:</label>
+                              <br><br>
+                              
+                            </div>
+                            <div class="col-lg-9">
+                              <div class="row">
+                                <div class="col-lg-11">
+                                  <select class="form-control" id="select" style="width: 50%;">
+                                    <option>Submarine 1</option>
+                                    <option>Submarine 2</option>
+                                    <option>Submarine 3</option>
+                                    <option>Submarine 4</option>
+                                    <option>Submarine 5</option>
+                                  </select>   
+                                </div>
+                                <div class="col-lg-1">
+                                  <a href="#" class="btn btn-primary">Submit</a>   
+                                </div>
+                              </div>
+                            </div>  
+
                         </div>
                     </div>
                 </div>
             </div>
+            
 
 <script>
       var raster = new ol.layer.Tile({
@@ -40,14 +66,6 @@ include("navbar.php");
           center: ol.proj.transform([10.34, 36.97], 'EPSG:4326', 'EPSG:3857'),
           zoom: 10
         })
-      });
-
-
-      var mousePosition = new ol.control.MousePosition({
-        coordinateFormat: ol.coordinate.createStringXY(2),
-        projection: 'EPSG:4326',
-        target: document.getElementById('myposition'),
-        undefinedHTML: '&nbsp;'
       });
 
       var features = new ol.Collection();
@@ -95,6 +113,16 @@ include("navbar.php");
       };
 
       addInteraction();
+
+      var mousePosition = new ol.control.MousePosition({
+        coordinateFormat: ol.coordinate.createStringXY(2),
+        projection: 'EPSG:4326',
+        target: document.getElementById('mouseXY'),
+        undefinedHTML: '&nbsp;'
+      });
+      map.addControl(mousePosition);
+
+      console.log(coordinateFormat);
 
  </script>
 
